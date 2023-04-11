@@ -23,7 +23,7 @@ const draw = () => {
         let text = matrix[Math.floor(Math.random() * matrix.length)];
         ctx.fillText(text, i * font_size, arr[i] * font_size);
         
-        if (arr[i] * font_size > height && Math.random() > 0.985) {
+        if (arr[i] * font_size > height && Math.random() > 0.975) {
             arr[i] = 0;
         }
         arr[i]++;
